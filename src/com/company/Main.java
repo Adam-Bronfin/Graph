@@ -11,16 +11,16 @@ public class Main {
 //            System.out.println(queue.poll());
 //        }
 
-        DataNode a = new DataNode(1);
-        DataNode b = new DataNode(2);
-        DataNode c = new DataNode(3);
-        DataNode d = new DataNode(4);
-        DataNode e = new DataNode(5);
-//        DataNode d = new DataNode(10);
-//        DataNode e = new DataNode(8);
-//        DataNode f = new DataNode(3);
-//        DataNode g = new DataNode(6);
-        ArrayList<DataNode> nodes = new ArrayList<DataNode>();
+        UndirectedNode a = new UndirectedNode(1);
+        UndirectedNode b = new UndirectedNode(2);
+        UndirectedNode c = new UndirectedNode(3);
+        UndirectedNode d = new UndirectedNode(4);
+        UndirectedNode e = new UndirectedNode(5);
+//        UndirectedNode d = new UndirectedNode(10);
+//        UndirectedNode e = new UndirectedNode(8);
+//        UndirectedNode g = new UndirectedNode(6);
+        ArrayList<UndirectedNode> nodes = new ArrayList<UndirectedNode>();
+//        UndirectedNode f = new UndirectedNode(3);
         nodes.add(a);
         nodes.add(b);
         nodes.add(c);
@@ -54,9 +54,9 @@ public class Main {
 
 
 
-        Graph graph = new Graph(nodes);
-        graph.dfs(a);
-        //graph.printGraph();
+        UndirectedGraph directedGraph = new UndirectedGraph(nodes);
+        directedGraph.dfs(a);
+        //directedGraph.printGraph();
 
     }
 }
